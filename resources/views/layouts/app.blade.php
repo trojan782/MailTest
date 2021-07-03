@@ -32,7 +32,7 @@
                         @endif
                     @else
                         <span>{{ Auth::user()->name }}</span>
-
+                        <a href="{{ route('home') }}">Dashboard</a>
                         <a href="{{ route('logout') }}"
                            class="no-underline hover:underline"
                            onclick="event.preventDefault();
