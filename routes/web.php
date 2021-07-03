@@ -1,8 +1,10 @@
 <?php
 
-use App\Http\Controllers\UserController;
+use App\Mail\NewUserNotification;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +25,8 @@ Auth::routes();
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/users', [UserController::class, 'index'])->name('users');
 
+//Route for mailing
+Route::get('/email', function () {
+    Mail::to('davidjacobs522@gmail.com')->send(new NewUserNotification());
+    return new NewUserNotification();
+});
