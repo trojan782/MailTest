@@ -17,7 +17,7 @@
                 <div class="w-full p-6">
                     <p class="text-gray-700">
                         <!-- component -->
-                            <h1 class="m-auto">Users Avaliable</h1>
+                            <h1 class="m-auto">Users Avaliable: {{ $users->count() }}</h1>
 
                     <div class="md:px-8 py-8 w-full">
                         <div class="shadow overflow-hidden rounded border-b border-gray-200">
