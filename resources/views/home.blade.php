@@ -26,19 +26,17 @@
                                 <thead class="bg-purple-400 text-white">
                                     <tr>
                                         <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Name</th>
-                                        <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Last name</th>
-                                        <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Phone</th>
-                                        <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Email</td>
+                                        <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Email Address</th>
+                                        <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Joined</td>
                                     </tr>
                                 </thead>
                                 <tbody class="text-gray-700">
                                     <tr>
-                                        <td class="w-1/3 text-left py-3 px-4">Lian</td>
-                                        <td class="w-1/3 text-left py-3 px-4">Smith</td>
+                                        <td class="w-1/3 text-left py-3 px-4">Trojan</td>
                                         <td class="text-left py-3 px-4"><a class="hover:text-blue-500"
-                                                href="tel:622322662">622322662</a></td>
+                                                href="tel:622322662">trojan@localhost.com</a></td>
                                         <td class="text-left py-3 px-4"><a class="hover:text-blue-500"
-                                                href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
+                                                href="mailto:jonsmith@mail.com">1 hour ago</a></td>
                                     </tr>
 
                                 </tbody>
