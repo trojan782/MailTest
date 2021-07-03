@@ -17,25 +17,27 @@
                 <div class="w-full p-6">
                     <p class="text-gray-700">
                         <!-- component -->
+                            <h1 class="m-auto">Users Avaliable</h1>
+
                     <div class="md:px-8 py-8 w-full">
                         <div class="shadow overflow-hidden rounded border-b border-gray-200">
-                            <table class="min-w-full bg-white">
+                            <table class="min-w-full bg-white ">
                                 <thead class="bg-purple-400 text-white">
                                     <tr>
-                                        <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Name</th>
-                                        <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Email Address</th>
-                                        <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Joined</td>
+                                        <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm border border-purple-600">Name</th>
+                                        <th class="text-left py-3 px-4 uppercase font-semibold text-sm border border-purple-600">Email Address</th>
+                                        <th class="text-left py-3 px-4 uppercase font-semibold text-sm border border-purple-600">Joined</td>
                                     </tr>
                                 </thead>
-                                {{-- @foreach ($users as $user) --}}
+                                @foreach ($users as $user)
                                      <tr>
-                                        <td class="w-1/3 text-left py-3 px-4">Trojan</td>
-                                        <td class="text-left py-3 px-4"><a class="hover:text-blue-500"
-                                                href="tel:622322662">trojan@localhost.com</a></td>
-                                        <td class="text-left py-3 px-4"><a class="hover:text-blue-500"
-                                                href="mailto:jonsmith@mail.com">1 hour ago</a></td>
+                                        <td class="w-1/3 text-left py-3 px-4 border border-purple-600">{{ $user->name }}</td>
+                                        <td class="text-left py-3 px-4 border border-purple-600"><a class="hover:text-blue-500"
+                                                href="tel:622322662">{{ $user->email }}</a></td>
+                                        <td class="text-left py-3 px-4 border border-purple-600"><a class="hover:text-blue-500"
+                                                href="mailto:jonsmith@mail.com">{{ $user->updated_at->diffForHumans() }}</a></td>
                                     </tr>
-                                {{-- @endforeach --}}
+                                @endforeach
                                 <tbody class="text-gray-700">
                                    
 
