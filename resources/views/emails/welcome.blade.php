@@ -1,7 +1,7 @@
 @component('mail::message')
-# Introduction
+# New User Alert ‼️
 
-The body of your message.
+A New user has just joined Use-ers
 
 @component('mail::button', ['url' => ''])
 Button Text
